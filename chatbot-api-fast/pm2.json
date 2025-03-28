@@ -5,7 +5,7 @@
       "interpreter": "/bin/bash",
       "script": "launch.bash",
       "out_file": "/var/log/chatbot-api.log",
-      "error_file": "/var/log/chatbot-api.err",
+      "error_file": "/var/log/chatbot-api.err"
     }
   ]
 }

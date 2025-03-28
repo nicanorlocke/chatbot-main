@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  chatbot-flask:
+    build: ./chatbot-api-flask
+    container_name: chatbot-flask
+    ports:
+      - "5001:5000"
+    networks:
+      - chatnet
+
+  backend:
+    build: ./chatbot-web-app/chatbot-backend
+    container_name: chatbot-backend
+    ports:
+      - "5000:5000"
+    networks:
+      - chatnet
+
+  frontend:
+    build: ./chatbot-web-app/chatbot-frontend
+    container_name: chatbot-frontend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+    networks:
+      - chatnet
+
+networks:
+  chatnet:
+    driver: bridge

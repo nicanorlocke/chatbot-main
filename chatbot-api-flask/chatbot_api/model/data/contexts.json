@@ -1,0 +1,126 @@
+{
+    "en": [
+        {
+            "questions": ["hello", "hi"],
+            "response": "Hello! How can I assist you today?"
+        },
+        {
+            "questions": ["bye", "goodbye"],
+            "response": "Goodbye! Have a great day!"
+        },
+        {
+            "questions": ["how are you", "how's it going"],
+            "response": "I'm just a bot, but I'm here to help you. How can I assist you?"
+        },
+        {
+            "questions": ["what can you do", "what are your functions"],
+            "response": "I can help you with a variety of tasks like answering questions, providing information, and assisting with website navigation. How can I help you today?"
+        },
+        {
+            "questions": ["help", "i need help"],
+            "response": "Sure, I'm here to help. What do you need assistance with?\\n- 'hello'\\n- 'bye'\\n- 'how are you'\\n- 'what can you do'\\n- 'help'\\n- 'thank you'\\n- 'how do I create an account'\\n- 'how do I reset my password'\\n- 'what are your hours'\\n- 'contact support'\\n- 'where are you located'\\n- 'do you have a privacy policy'\\n- 'how can I update my account information'\\n- 'how do I unsubscribe from emails'\\n- 'how do I delete my account'."
+        },
+        {
+            "questions": ["thank you", "thanks"],
+            "response": "You're welcome! If you have any other questions, feel free to ask."
+        },
+        {
+            "questions": ["how do I create an account", "sign up"],
+            "response": "To create an account, click on the 'Sign Up' button at the top right of the page and fill in the required information."
+        },
+        {
+            "questions": ["how do I reset my password", "forgot password"],
+            "response": "To reset your password, click on 'Forgot Password' at the login page and follow the instructions."
+        },
+        {
+            "questions": ["what are your hours", "business hours"],
+            "response": "Our customer service is available from 9 AM to 5 PM, Monday through Friday."
+        },
+        {
+            "questions": ["contact support", "how to reach support"],
+            "response": "You can contact support by emailing support@example.com"
+        },
+        {
+            "questions": ["where are you located", "location"],
+            "response": "We are located at 123 Main Street, Anytown, USA."
+        },
+        {
+            "questions": ["do you have a privacy policy", "privacy policy"],
+            "response": "Yes, you can read our privacy policy by clicking the link at the bottom of the page."
+        },
+        {
+            "questions": ["how can I update my account information", "change account details"],
+            "response": "To update your account information, go to your account settings and make the necessary changes."
+        },
+        {
+            "questions": ["how do I unsubscribe from emails", "stop receiving emails"],
+            "response": "To unsubscribe from emails, click the 'unsubscribe' link at the bottom of any of our emails."
+        },
+        {
+            "questions": ["how do I delete my account", "remove my account"],
+            "response": "To delete your account, please contact our support team for assistance."
+        }
+    ],
+    "es": [
+        {
+            "questions": ["hola", "buenos días"],
+            "response": "¡Hola! ¿Cómo puedo ayudarte hoy?"
+        },
+        {
+            "questions": ["adiós", "adios", "hasta luego"],
+            "response": "¡Adiós! Que tengas un gran día."
+        },
+        {
+            "questions": ["cómo estás", "qué tal"],
+            "response": "Soy solo un bot, pero estoy aquí para ayudarte. ¿Cómo puedo asistirte?"
+        },
+        {
+            "questions": ["qué puedes hacer", "cuáles son tus funciones"],
+            "response": "Puedo ayudarte con una variedad de tareas, como responder preguntas, proporcionar información y asistir con la navegación del sitio web. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+            "questions": ["ayuda", "necesito ayuda"],
+            "response": "Claro, estoy aquí para ayudar. ¿Con qué necesitas asistencia?\\n- hola\\n- adiós\\n- cómo estás\\n- qué puedes hacer\\n- ayuda\\n- gracias\\n- cómo creo una cuenta\\n- cómo restablezco mi contraseña\\n- cuáles son sus horarios\\n- contactar soporte\\n- dónde están ubicados\\n- tienen una política de privacidad\\n- cómo puedo actualizar la información de mi cuenta\\n- cómo me doy de baja de los correos electrónicos\\n- cómo elimino mi cuenta."
+        },
+        {
+            "questions": ["gracias", "muchas gracias"],
+            "response": "¡De nada! Si tienes alguna otra pregunta, no dudes en preguntar."
+        },
+        {
+            "questions": ["cómo creo una cuenta", "registrarse"],
+            "response": "Para crear una cuenta, haz clic en el botón 'Registrarse' en la parte superior derecha de la página y completa la información requerida."
+        },
+        {
+            "questions": ["cómo restablezco mi contraseña", "olvidé mi contraseña"],
+            "response": "Para restablecer tu contraseña, haz clic en 'Olvidé mi contraseña' en la página de inicio de sesión y sigue las instrucciones."
+        },
+        {
+            "questions": ["cuáles son sus horarios", "horario de atención"],
+            "response": "Nuestro servicio al cliente está disponible de 9 AM a 5 PM, de lunes a viernes."
+        },
+        {
+            "questions": ["contactar soporte", "cómo contactar soporte"],
+            "response": "Puedes contactar con el soporte enviando un correo electrónico a soporte@ejemplo.com"
+        },
+        {
+            "questions": ["dónde están ubicados", "ubicación"],
+            "response": "Estamos ubicados en la Calle Principal 123, Ciudad Ejemplo, País."
+        },
+        {
+            "questions": ["tienen una política de privacidad", "política de privacidad"],
+            "response": "Sí, puedes leer nuestra política de privacidad haciendo clic en el enlace en la parte inferior de la página."
+        },
+        {
+            "questions": ["cómo puedo actualizar la información de mi cuenta", "cambiar detalles de la cuenta"],
+            "response": "Para actualizar la información de tu cuenta, ve a la configuración de tu cuenta y realiza los cambios necesarios."
+        },
+        {
+            "questions": ["cómo me doy de baja de los correos electrónicos", "dejar de recibir correos electrónicos"],
+            "response": "Para darte de baja de los correos electrónicos, haz clic en el enlace 'darse de baja' en la parte inferior de cualquiera de nuestros correos electrónicos."
+        },
+        {
+            "questions": ["cómo elimino mi cuenta", "eliminar mi cuenta"],
+            "response": "Para eliminar tu cuenta, por favor contacta a nuestro equipo de soporte para recibir asistencia."
+        }
+    ]
+}

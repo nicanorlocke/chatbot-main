@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSE Client</title>
+    <style>
+        #messages div {
+            margin: 10px 0;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .response-container {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Server-Sent Events Client</h1>
+    <input type="text" id="questionInput" placeholder="Enter your question">
+    <button id="sendButton">Send Question</button>
+    <div id="messages">
+        <!-- Aquí se mostrarán las respuestas recibidas -->
+    </div>
+
+    <script>      
+        document.getElementById('sendButton').onclick = function() {
+            const question = document.getElementById('questionInput').value;
+            const eventSource = new EventSource(`http://localhost:5001/chatbot-api/v1/chatbot-api/v1/chat/stream?question=${encodeURIComponent(question)}`);
+
+            // Añade la pregunta al chat
+            const questionElement = document.createElement("div");
+            questionElement.className = 'question';
+            questionElement.textContent = "Pregunta: " + question;
+            document.getElementById('messages').appendChild(questionElement);
+
+            eventSource.onopen = function(event) {
+                console.log('Conexión SSE establecida.');
+            };
+
+            eventSource.onmessage = function(event) {
+                const newElement = document.createElement("div");
+                const formattedData = event.data.replace(/\\n/g, '<br>');
+                newElement.innerHTML = "New message: " + formattedData;
+                newElement.classList.add("response-container");
+                document.getElementById('messages').appendChild(newElement);
+            };
+
+            eventSource.addEventListener('end', function(event) {
+                console.log('Finalizando conexión SSE.');
+                eventSource.close();
+            });
+
+            eventSource.onerror = function(event) {
+                console.error('Error en la conexión SSE:', event);
+                eventSource.close()
+            };
+        };
+    </script>
+</body>
+</html>
